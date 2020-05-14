@@ -1,4 +1,12 @@
-# AngularNginxDocker
+# Get Started with NGINX on Docker
+
+How to deploy a single-page app with NGINX in a docker container?
+
+## [Medium Article](https://codeburst.io/get-started-with-nginx-on-docker-907e5c0c9f3a)
+
+In this introductory article, we will use NGINX to server a Single-Page Application (SPA). We will set up and play with NGINX on docker, including (1) serving a website by mounting a volume to a docker container, and (2) building and running a docker image with a web app and NGINX.
+
+---
 
 ```bash
 ng new angular-nginx-docker --minimal
