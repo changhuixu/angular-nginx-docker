@@ -1,5 +1,7 @@
 # Get Started with NGINX on Docker
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I63W4OK)
+
 How to deploy a single-page app with NGINX in a docker container?
 
 ## [Medium Article](https://codeburst.io/get-started-with-nginx-on-docker-907e5c0c9f3a)
@@ -34,11 +36,11 @@ root@805435da60f9:/# cd etc/nginx/
 ```bash
 ng build --prod
 
-docker run -it -p 80:80 \
+docker run -it --rm -p 80:80 \
     -v /$PWD/dist/angular-nginx-docker://usr/share/nginx/html:ro \
     nginx:alpine
 
-docker run -it -p 4200:80 \
+docker run -it --rm -p 4200:80 \
     -v /$PWD/dist/angular-nginx-docker://usr/share/nginx/html:ro \
     -v /$PWD/.nginx/nginx.conf://etc/nginx/nginx.conf:ro \
     nginx:alpine
@@ -61,3 +63,9 @@ $ curl http://localhost:80/ \
     --output /dev/null
 # console output: 391
 ```
+
+## License
+
+Feel free to use the code in this repository as it is under MIT license.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I63W4OK)
